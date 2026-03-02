@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>SDR Radio - Guido Iglesias</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDR Radio - Guido Iglesias</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; font-family: sans-serif; }
+        iframe { width: 100%; height: 100%; border: none; }
+        .header { background: #333; color: white; padding: 10px; text-align: center; position: absolute; width: 100%; z-index: 100; opacity: 0.8; }
+    </style>
 </head>
 <body>
-    <h1>Mi Radio SDR en Vivo</h1>
-    <p>Escuchando desde la Orange Pi Zero 3</p>
+    <div class="header">Radio SDR en Vivo - Orange Pi Zero 3</div>
     
-    <audio controls autoplay>
-        <source src="https://blogging-entering-much-renewable.trycloudflare.com/audio.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
+    <iframe src="https://blogging-entering-much-renewable.trycloudflare.com" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-    <br><br>
-    <p>Estado del Túnel: <span id="status">Conectado vía Cloudflare</span></p>
 </body>
 </html>
